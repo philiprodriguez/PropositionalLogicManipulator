@@ -6,32 +6,33 @@ Because this application is written in Java, it will need to be compiled with a 
 Examples:<br />
 Let's show that (p → q) → (q v ¬p) is a tautology. First, convert it into a form with characters the software understands: (p>q)>(q+~p). Now, convert it to postfix with the software and run that postfix through the truth table generator. Below is the input and output for this.<br />
 <br />
-1 - Convert Infix Expression to Postfix Expression<br />
-2 - Evaluate a Postfix Expression<br />
-3 - Create a Truth Table for a Postfix Expression<br />
-4 - Help<br />
-5 - Exit<br />
-<b>1</b><br />
-Enter an infix expression:<br />
-<b>(p>q)>(q+~p)</b><br />
-pq>qp~+><br />
-1 - Convert Infix Expression to Postfix Expression<br />
-2 - Evaluate a Postfix Expression<br />
-3 - Create a Truth Table for a Postfix Expression<br />
-4 - Help<br />
-5 - Exit<br />
-<b>3</b><br />
-Enter a postfix expression:<br />
-<b>pq>qp~+></b><br />
-|&nbsp;p&nbsp;|&nbsp;q&nbsp;|&nbsp;(p>q)&nbsp;|&nbsp;(~p)&nbsp;|&nbsp;(q+(~p))&nbsp;|&nbsp;((p>q)>(q+(~p)))&nbsp;|&nbsp;<br />
-|&nbsp;F&nbsp;|&nbsp;F&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br />
-|&nbsp;F&nbsp;|&nbsp;T&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br />
-|&nbsp;T&nbsp;|&nbsp;F&nbsp;|&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br />
-|&nbsp;T&nbsp;|&nbsp;T&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br />
-<br />
-1 - Convert Infix Expression to Postfix Expression<br />
-2 - Evaluate a Postfix Expression<br />
-3 - Create a Truth Table for a Postfix Expression<br />
-4 - Help<br />
-5 - Exit<br />
-<br />
+```
+1 - Convert Infix Expression to Postfix Expression
+2 - Evaluate a Postfix Expression
+3 - Create a Truth Table for a Postfix Expression
+4 - Help
+5 - Exit
+1
+Enter an infix expression:
+(p>q)>(q+~p)
+pq>qp~+>
+1 - Convert Infix Expression to Postfix Expression
+2 - Evaluate a Postfix Expression
+3 - Create a Truth Table for a Postfix Expression
+4 - Help
+5 - Exit
+3
+Enter a postfix expression:
+pq>qp~+>
+| p | q | (p>q) | (~p) | (q+(~p)) | ((p>q)>(q+(~p))) | 
+| F | F |   T   |   T  |     T    |         T        | 
+| F | T |   T   |   T  |     T    |         T        | 
+| T | F |   F   |   F  |     F    |         T        | 
+| T | T |   T   |   F  |     T    |         T        | 
+
+1 - Convert Infix Expression to Postfix Expression
+2 - Evaluate a Postfix Expression
+3 - Create a Truth Table for a Postfix Expression
+4 - Help
+5 - Exit
+```
