@@ -36,3 +36,5 @@ pq>qp~+>
 4 - Help
 5 - Exit
 ```
+<br />
+And there we have it! A truth table clearly showing that the expression is a tautology!
