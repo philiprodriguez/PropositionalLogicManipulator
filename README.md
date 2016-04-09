@@ -23,11 +23,11 @@ pq>qp~+><br />
 <b>3</b><br />
 Enter a postfix expression:<br />
 <b>pq>qp~+></b><br />
-| p | q | (p>q) | (~p) | (q+(~p)) | ((p>q)>(q+(~p))) | <br />
-| F | F |   T   |   T  |     T    |         T        | <br />
-| F | T |   T   |   T  |     T    |         T        | <br />
-| T | F |   F   |   F  |     F    |         T        | <br />
-| T | T |   T   |   F  |     T    |         T        | <br />
+|&nbsp;p&nbsp;|&nbsp;q&nbsp;|&nbsp;(p>q)&nbsp;|&nbsp;(~p)&nbsp;|&nbsp;(q+(~p))&nbsp;|&nbsp;((p>q)>(q+(~p)))&nbsp;|&nbsp;<br />
+|&nbsp;F&nbsp;|&nbsp;F&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br />
+|&nbsp;F&nbsp;|&nbsp;T&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br />
+|&nbsp;T&nbsp;|&nbsp;F&nbsp;|&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br />
+|&nbsp;T&nbsp;|&nbsp;T&nbsp;|&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;<br />
 <br />
 1 - Convert Infix Expression to Postfix Expression<br />
 2 - Evaluate a Postfix Expression<br />
